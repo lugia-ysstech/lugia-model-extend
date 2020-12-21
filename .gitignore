@@ -11,6 +11,7 @@
 /tmp
 /.history
 /lib
+/.idea
 
 # misc
 .DS_Store

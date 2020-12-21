@@ -19,31 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lugia-model-extend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lugia.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/buildPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/compile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/modelInfos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/test/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/test/test.zh-CN.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="add: init lugia-model-extend">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +57,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608254866116</updated>
-      <workItem from="1608254867212" duration="13891000" />
+      <workItem from="1608254867212" duration="14037000" />
     </task>
+    <task id="LOCAL-00001" summary="add: init lugia-model-extend">
+      <created>1608530291195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608530291195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +83,15 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: init lugia-model-extend" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: init lugia-model-extend" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2" timestamp="1608530308351">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608530308351" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608263803206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
