@@ -1,3 +1,4 @@
+// @ts-ignore
 import lugiax from "@lugia/lugiax";
 const __LUGIAX_MODEL_DEFINE__ = "test";
 
@@ -11,18 +12,19 @@ const state: StateType = {
   test: '12343'
 };
 
+// @ts-ignore
 export default lugiax.register({
   model: __LUGIAX_MODEL_DEFINE__,
   state,
   mutations: {
     sync: {
       increment(state: StateType) {
-
+        return state;
       }
     },
     async: {
       async testIncrement(state: StateType, param: any) {
-
+         return state;
       }
     }
   }

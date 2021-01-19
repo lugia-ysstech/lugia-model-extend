@@ -8,7 +8,9 @@ const path = require('path');
 const fs = require('fs');
 const ensureFileSync = require('fs-extra').ensureFileSync;
 const writeJsonSync = require('fs-extra').writeJsonSync;
+const readFileSync = require('fs-extra').readFileSync;
 const readJsonSync = require('fs-extra').readJsonSync;
+const LugiaxBabelPlugin = require('./buildPlugin');
 
 const fileRelativePath = '../src/models';
 
@@ -29,19 +31,41 @@ async function getFolderNames(
     );
 }
 
-async function create() {
-  const folder = await getFolderNames(fileRelativePath, []);
+async function getModelsMeta(folder) {
+  const modelsMeta = {};
+  await Promise.all(
+    folder.map(async folderItem =>  {
+      const folderPath = path.join(__dirname, fileRelativePath, folderItem);
+      const meta = readFileSync(path.join(folderPath, 'index.ts'), 'utf-8');
+      const nodeModuleName = await LugiaxBabelPlugin(meta, path.join(__dirname, fileRelativePath));
+      const target = eval(nodeModuleName);
+      const { mutations } = target;
+      const newMutations = Object.keys(mutations).reduce((result, next) => {
+        // eslint-disable-next-line no-param-reassign
+        result[next] = '';
+        return result;
+      }, {});
+      const modelMeta = readJsonSync(path.join(folderPath, `${folderItem}.zh-CN.json`));
 
-  const pluginsMeta = {};
-  folder.forEach(folderItem => {
-    const meta = readJsonSync(path.join(__dirname, fileRelativePath, folderItem, `${folderItem}.zh-CN.json`));
-    const { modelName } = meta;
-    pluginsMeta[modelName] = meta;
-  });
+      modelsMeta[folderItem] = {
+        ...modelMeta,
+        module: {
+          ...target,
+          state: target.getState().toJS(),
+          mutations: newMutations
+        },
+      }
+    })
+  )
 
-  const targetPath = path.join(__dirname, fileRelativePath, 'modelInfos.json');
-  ensureFileSync(targetPath);
-  writeJsonSync(targetPath, pluginsMeta);
+  return modelsMeta;
 }
 
+async function create() {
+  const folder = await getFolderNames(fileRelativePath, []);
+  const modelsMeta = await getModelsMeta(folder);
+  const targetPath = path.join(__dirname, fileRelativePath, 'modelInfos.json');
+  ensureFileSync(targetPath);
+  writeJsonSync(targetPath, modelsMeta);
+}
 create();

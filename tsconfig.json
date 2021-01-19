@@ -4,11 +4,10 @@
     "declaration": true,
     "sourceMap": false,
     "jsx": "react",
-    "target": "es5",
+    "target": "es6",
     "outDir": "lib",
     "strict": true,
     "importHelpers": true,
-    "downlevelIteration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -16,10 +15,9 @@
       "esnext",
       "dom"
     ],
-    "types": [
-      "jest",
-      "node"
-    ]
+    "types": ["jest", "node"]
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

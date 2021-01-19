@@ -1,13 +1,21 @@
 {
-  "modelName": "test",
-  "zh_name": "string",
-  "author": "@lugia",
+  "name": "test",
+  "zh_name": "aaaaa",
   "description": "",
   "modeInfo": {
-    "state": [],
-    "mutations": {
-      "sync": [],
-      "async": []
-    }
+    "state": [
+      {
+        "name": "count",
+        "zh_name": "",
+        "desc": ""
+      }
+    ],
+    "mutations": [
+      {
+        "name": "increment",
+        "zh_name": "",
+        "desc": ""
+      }
+    ]
   }
 }

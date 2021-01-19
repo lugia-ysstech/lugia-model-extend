@@ -1,5 +1,1 @@
-import ReactDom from 'react-dom';
-import '@lugia/lugia-web/dist/css/global.css';
-import App from './App';
 
-ReactDom.render(<App />, document.getElementById('root'));
