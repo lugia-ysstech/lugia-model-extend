@@ -1,0 +1,1 @@
+{"test":{"name":"test","zh_name":"aaaaa","description":"","modeInfo":{"state":[{"name":"count","zh_name":"","desc":""}],"mutations":[{"name":"increment","zh_name":"","desc":""}]},"module":{"mutations":{"increment":"","asyncTestIncrement":""},"model":"test","state":{"counter":"","test":"12343"}}}}
