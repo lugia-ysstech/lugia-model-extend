@@ -10,6 +10,7 @@ const ensureFileSync = require('fs-extra').ensureFileSync;
 const writeJsonSync = require('fs-extra').writeJsonSync;
 const readFileSync = require('fs-extra').readFileSync;
 const readJsonSync = require('fs-extra').readJsonSync;
+const { format } = require("date-fns");
 const LugiaxBabelPlugin = require('./buildPlugin');
 
 const fileRelativePath = '../src/models';
@@ -46,14 +47,18 @@ async function getModelsMeta(folder) {
         return result;
       }, {});
       const modelMeta = readJsonSync(path.join(folderPath, `${folderItem}.zh-CN.json`));
-
+      const updateDate = format(new Date(), "yyyy-MM-dd");
+      const targetName = `__LUGIAX_MODEL__${folderItem}`;
       modelsMeta[folderItem] = {
         ...modelMeta,
+        targetName,
+        updateDate,
         module: {
           ...target,
           state: target.getState().toJS(),
           mutations: newMutations
         },
+        source: meta
       }
     })
   )

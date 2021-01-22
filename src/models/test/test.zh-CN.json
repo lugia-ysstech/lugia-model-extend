@@ -2,7 +2,7 @@
   "name": "test",
   "zh_name": "aaaaa",
   "description": "",
-  "modeInfo": {
+  "modelInfo": {
     "state": [
       {
         "name": "count",

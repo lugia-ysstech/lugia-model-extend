@@ -12,7 +12,7 @@ const state: StateType = {
   test: '12343'
 };
 
-// @ts-ignore
+
 export default lugiax.register({
   model: __LUGIAX_MODEL_DEFINE__,
   state,
