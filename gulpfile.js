@@ -34,7 +34,7 @@ gulp.task('ts', () => {
 });
 gulp.task('js', () => {
   return gulp
-    .src(['src/models/**/*.js'])
+    .src(['src/models/**/*.[js|ts|tsx]'])
     .pipe(
       babel({
         presets: ['react-app'],

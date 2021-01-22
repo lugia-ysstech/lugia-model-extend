@@ -1,17 +1,15 @@
-// @ts-ignore
 import lugiax from "@lugia/lugiax";
 const __LUGIAX_MODEL_DEFINE__ = "test";
 
 type StateType = {
-  counter: string,
-  test: string
-}
-
-const state: StateType = {
-  counter: '',
-  test: '12343'
+  counter: string;
+  test: string;
 };
 
+const state: StateType = {
+  counter: "",
+  test: "12343"
+};
 
 export default lugiax.register({
   model: __LUGIAX_MODEL_DEFINE__,
@@ -24,7 +22,7 @@ export default lugiax.register({
     },
     async: {
       async testIncrement(state: StateType, param: any) {
-         return state;
+        return state;
       }
     }
   }
