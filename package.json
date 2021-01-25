@@ -1,6 +1,6 @@
 {
-  "name": "@ysstech-data/data-web",
-  "version": "1.0.2-alpha.44",
+  "name": "lugialkr-model-extend",
+  "version": "1.0.1",
   "scripts": {
     "start": "lugia-scripts start",
     "build": "lugia-scripts build",
