@@ -6,15 +6,25 @@
     "state": [
       {
         "name": "count",
-        "zh_name": "",
-        "desc": ""
+        "zh_name": "count",
+        "desc": "count"
+      },
+      {
+        "name": "test",
+        "zh_name": "test",
+        "desc": "test"
       }
     ],
     "mutations": [
       {
         "name": "increment",
-        "zh_name": "",
-        "desc": ""
+        "zh_name": "increment",
+        "desc": "increment"
+      },
+      {
+        "name": "testIncrement",
+        "zh_name": "testIncrement",
+        "desc": "testIncrement"
       }
     ]
   }

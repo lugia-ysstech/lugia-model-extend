@@ -2,12 +2,12 @@ import lugiax from "@lugia/lugiax";
 const __LUGIAX_MODEL_DEFINE__ = "test";
 
 type StateType = {
-  counter: string;
+  counter: number;
   test: string;
 };
 
 const state: StateType = {
-  counter: "",
+  counter: 0,
   test: "12343"
 };
 
