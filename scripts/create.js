@@ -6,12 +6,14 @@
  */
 const path = require('path');
 const fs = require('fs');
+const gulp = require('gulp');
 const ensureFileSync = require('fs-extra').ensureFileSync;
 const writeJsonSync = require('fs-extra').writeJsonSync;
 const readFileSync = require('fs-extra').readFileSync;
 const readJsonSync = require('fs-extra').readJsonSync;
 const { format } = require("date-fns");
 const LugiaxBabelPlugin = require('./buildPlugin');
+const buildTask = require("./gulpfile");
 
 const fileRelativePath = '../src/models';
 
@@ -66,11 +68,18 @@ async function getModelsMeta(folder) {
   return modelsMeta;
 }
 
-async function create() {
+async function create(param) {
+  const {importModules} = param;
   const folder = await getFolderNames(fileRelativePath, []);
   const modelsMeta = await getModelsMeta(folder);
   const targetPath = path.join(__dirname, fileRelativePath, 'modelInfos.json');
   ensureFileSync(targetPath);
   writeJsonSync(targetPath, modelsMeta);
+  buildTask(importModules);
+  gulp.run('default', () => {});
 }
-create();
+create({importModules: []})
+
+
+
+
