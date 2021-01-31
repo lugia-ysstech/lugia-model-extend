@@ -14,6 +14,7 @@ const state: StateType = {
 export default lugiax.register({
   model: __LUGIAX_MODEL_DEFINE__,
   state,
+  module: "lugialkr-model-extend",
   mutations: {
     sync: {
       increment(state: StateType) {
