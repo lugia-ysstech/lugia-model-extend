@@ -19,11 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="update: update lugia-model-extend">
-      <change afterPath="$PROJECT_DIR$/scripts/compile.js" afterDir="false" />
+    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="update: 修改打包方式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lugia.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/lugia.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/modelInfos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,24 +50,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/@lugia/lugia-package-common" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="$PROJECT_DIR$/../../../Program Files/nodejs/node" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\yss\workspace\lugia-model-extend\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\yss\workspace\lugia-model-extend\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\yss\workspace\lugia-model-extend\node_modules\@lugia\lugia-package-common" />
+      <recent name="C:\yss\workspace\lugia-model-extend\node_modules\@lugia\lugia-package-models" />
+      <recent name="C:\yss\workspace\lugia-model-extend\node_modules\@lugia\ide-file-parser" />
+      <recent name="C:\yss\workspace\lugia-model-extend\src" />
+      <recent name="C:\yss\workspace\lugia-model-extend\scripts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\yss\workspace\lugia-model-extend\src\models" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\yss\workspace\lugia-model-extend\src" />
-      <recent name="C:\yss\workspace\lugia-model-extend\scripts" />
-      <recent name="C:\yss\workspace\lugia-model-extend" />
-    </key>
   </component>
-  <component name="RunManager" selected="Node.js.compile.js">
+  <component name="RunManager" selected="Node.js.create.js">
     <configuration name="compile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/compile.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
@@ -74,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.compile.js" />
         <item itemvalue="Node.js.create.js" />
+        <item itemvalue="Node.js.compile.js" />
       </list>
     </recent_temporary>
   </component>
@@ -101,6 +105,33 @@
       <workItem from="1611543088733" duration="471000" />
       <workItem from="1611543795354" duration="869000" />
       <workItem from="1611545168836" duration="5467000" />
+      <workItem from="1611752373757" duration="606000" />
+      <workItem from="1611804796073" duration="601000" />
+      <workItem from="1611816619088" duration="1340000" />
+      <workItem from="1611892472835" duration="14000" />
+      <workItem from="1611903361065" duration="1000" />
+      <workItem from="1611907151157" duration="1000" />
+      <workItem from="1611908341290" duration="1694000" />
+      <workItem from="1612072945573" duration="1804000" />
+      <workItem from="1612080944227" duration="4131000" />
+      <workItem from="1612087528527" duration="1022000" />
+      <workItem from="1612156909088" duration="11287000" />
+      <workItem from="1612173437345" duration="119000" />
+      <workItem from="1612344228875" duration="168000" />
+      <workItem from="1612355702757" duration="2499000" />
+      <workItem from="1612431448336" duration="1079000" />
+      <workItem from="1612492585435" duration="959000" />
+      <workItem from="1612495924071" duration="2471000" />
+      <workItem from="1612513930847" duration="367000" />
+      <workItem from="1612514323177" duration="2988000" />
+      <workItem from="1612661805156" duration="489000" />
+      <workItem from="1612662311738" duration="591000" />
+      <workItem from="1612677473648" duration="7830000" />
+      <workItem from="1612751291788" duration="3112000" />
+      <workItem from="1612761825076" duration="2130000" />
+      <workItem from="1612779113080" duration="7365000" />
+      <workItem from="1612843778268" duration="4182000" />
+      <workItem from="1612920650637" duration="3423000" />
     </task>
     <task id="LOCAL-00001" summary="add: init lugia-model-extend">
       <created>1608530291195</created>
@@ -158,16 +189,32 @@
       <option name="project" value="LOCAL" />
       <updated>1611543259028</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update: 修改package.json文件">
+      <created>1611751804086</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611751804086</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update: register时传入module">
+      <created>1612075166237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612075166237</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update: 修改打包方式">
+      <created>1612092063471</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612092063471</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/index.d.ts" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -184,52 +231,63 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add: init lugia-model-extend" />
     <MESSAGE value="update: update lugia-model-extend" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: update lugia-model-extend" />
+    <MESSAGE value="update: 修改package.json文件" />
+    <MESSAGE value="update: register时传入module" />
+    <MESSAGE value="update: 修改打包方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 修改打包方式" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1611641078769">
+    <state x="672" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612936733054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611641078769" />
+    <state x="672" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612936733054" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612834657686">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612834657686" />
     <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1611036682508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611036682508" />
-    <state width="1894" height="267" key="GridCell.Tab.0.bottom" timestamp="1611640408493">
+    <state width="1894" height="267" key="GridCell.Tab.0.bottom" timestamp="1612752202338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1894" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611640408493" />
-    <state width="1894" height="267" key="GridCell.Tab.0.center" timestamp="1611640408493">
+    <state width="1894" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612752202338" />
+    <state width="1894" height="267" key="GridCell.Tab.0.center" timestamp="1612752202338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1894" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611640408493" />
-    <state width="1894" height="267" key="GridCell.Tab.0.left" timestamp="1611640408493">
+    <state width="1894" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612752202338" />
+    <state width="1894" height="267" key="GridCell.Tab.0.left" timestamp="1612752202337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1894" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611640408493" />
-    <state width="1894" height="267" key="GridCell.Tab.0.right" timestamp="1611640408493">
+    <state width="1894" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612752202337" />
+    <state width="1894" height="267" key="GridCell.Tab.0.right" timestamp="1612752202338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1894" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611640408493" />
-    <state x="723" y="153" key="RollbackChangesDialog" timestamp="1611545349679">
+    <state width="1894" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612752202338" />
+    <state x="723" y="153" key="RollbackChangesDialog" timestamp="1612166676020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="723" y="153" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611545349679" />
-    <state x="344" y="78" key="SettingsEditor" timestamp="1611641139481">
+    <state x="723" y="153" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612166676020" />
+    <state x="344" y="78" key="SettingsEditor" timestamp="1612166454168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="344" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611641139481" />
-    <state x="452" y="173" key="Vcs.Push.Dialog.v2" timestamp="1611544652266">
+    <state x="344" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612166454168" />
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2" timestamp="1612092066169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="173" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611544652266" />
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612092066169" />
     <state x="719" y="190" key="VcsDiffUtil.ChangesDialog" timestamp="1611545508729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="190" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611545508729" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608707020483">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1612836461189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608707020483" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612836461189" />
+    <state x="589" y="195" width="742" height="650" key="find.popup" timestamp="1612081722396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="589" y="195" width="742" height="650" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612081722396" />
   </component>
 </project>

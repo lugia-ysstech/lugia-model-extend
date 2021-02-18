@@ -4,7 +4,7 @@
  *
  * @flow
  */
-const create = require('@lugia/lugia-package-models');
-create({importModules: [], projectPath: __dirname})
-
+const create = require('@lugia/lugia-package-models').default;
+const {join} = require('path');
+create({importModules: [], projectPath: join(__dirname, '../')})
 
