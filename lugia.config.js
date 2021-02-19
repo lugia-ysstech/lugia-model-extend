@@ -1,7 +1,8 @@
 export default {
   disableCSSModules: true,
   cssModulesWithAffix: true,
-  applyWebpack (webpackConfig, { webpack, merge }) {
+  entry: './src/index.tsx',
+  applyWebpack(webpackConfig) {
     return webpackConfig;
   }
 };

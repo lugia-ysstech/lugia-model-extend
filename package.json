@@ -11,15 +11,8 @@
     "prettier": "prettier --write"
   },
   "dependencies": {
-    "@babel/parser": "7.12.15",
-    "@babel/traverse": "7.12.13",
-    "@lugia/ide-file-parser": "^1.0.0-alpha.11",
-    "@lugia/lugia-package-models": "1.0.0-alpha.10",
     "@lugia/lugiax": "^1.2.6",
     "@lugia/lugiax-router": "^1.2.2",
-    "history": "4.9.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
     "styled-components": "4.2.0"
   },
   "devDependencies": {
@@ -59,7 +52,10 @@
     "tree-kill": "^1.2.2",
     "ts-import-plugin": "^1.6.6",
     "ts-jest": "^26.4.3",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "@lugia/lugia-package-models": "1.0.0-alpha.10",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
     "@lugia/lugiax": ">1.1.13",
@@ -83,7 +79,7 @@
       "pre-commit": "npm run lint-staged"
     }
   },
-  "main": "src/index.tsx",
+  "main": "dist/test/index.js",
   "files": [
     "dist",
     "interface",

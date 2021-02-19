@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="update: 修改打包方式">
+    <list default="true" id="21afb455-8596-4576-9164-4d17ad66f5ce" name="Default Changelist" comment="update: 修改lugia-model-extend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lugia.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/lugia.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -132,6 +131,8 @@
       <workItem from="1612779113080" duration="7365000" />
       <workItem from="1612843778268" duration="4182000" />
       <workItem from="1612920650637" duration="3423000" />
+      <workItem from="1613613413776" duration="2043000" />
+      <workItem from="1613698746658" duration="2347000" />
     </task>
     <task id="LOCAL-00001" summary="add: init lugia-model-extend">
       <created>1608530291195</created>
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612092063471</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update: 修改lugia-model-extend">
+      <created>1613613501140</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613613501140</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,17 +242,18 @@
     <MESSAGE value="update: 修改package.json文件" />
     <MESSAGE value="update: register时传入module" />
     <MESSAGE value="update: 修改打包方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: 修改打包方式" />
+    <MESSAGE value="update: 修改lugia-model-extend" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 修改lugia-model-extend" />
   </component>
   <component name="WindowStateProjectService">
     <state x="672" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612936733054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612936733054" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612834657686">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1613701071199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612834657686" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613701071199" />
     <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1611036682508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,10 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="344" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612166454168" />
-    <state x="452" y="173" key="Vcs.Push.Dialog.v2" timestamp="1612092066169">
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2" timestamp="1613613503079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="173" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612092066169" />
+    <state x="452" y="173" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613613503079" />
     <state x="719" y="190" key="VcsDiffUtil.ChangesDialog" timestamp="1611545508729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

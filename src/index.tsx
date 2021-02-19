@@ -1,19 +1,5 @@
 import React from "react";
-import { createBrowserHistory } from "history";
-import { createApp, render } from "@lugia/lugiax-router";
-import Demo from "./App";
+import ReactDom from "react-dom";
+import App from "./App";
 
-const history = createBrowserHistory();
-
-const App = createApp(
-  {
-    "/": {
-      component: Demo
-    }
-  },
-  history
-);
-
-render(() => {
-  return <App />;
-}, "root");
+ReactDom.render(<App />, document.getElementById("root"));

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "es2020",
+    "module": "es2015",
     "declaration": true,
     "sourceMap": true,
     "jsx": "react",
@@ -12,8 +12,7 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["esnext", "dom"],
-    "types": ["jest"],
-    "noImplicitAny": true
+    "types": ["jest"]
   },
   "exclude": ["dist"],
   "include": ["src/models"]
