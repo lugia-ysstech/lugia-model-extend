@@ -34,7 +34,6 @@
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-react-flow-props-to-prop-types": "0.15.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-react-app": "3.1.0",
     "console": "^0.7.2",
     "debug": "4.1.1",
     "enzyme": "^3.11.0",
@@ -53,9 +52,17 @@
     "ts-import-plugin": "^1.6.6",
     "ts-jest": "^26.4.3",
     "typescript": "^4.0.3",
-    "@lugia/lugia-package-models": "1.0.0-alpha.10",
+    "@lugia/lugia-package-models": "1.0.1",
     "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/plugin-transform-destructuring": "^7.9.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/plugin-transform-spread": "^7.8.3",
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "@babel/types": "^7.12.12",
+    "fs-extra": "^9.1.0"
   },
   "peerDependencies": {
     "@lugia/lugiax": ">1.1.13",
